@@ -16,7 +16,7 @@ The model is trained using the Adam optimizer and binary cross-entropy loss. The
 
 ## Results
 
-The model achieves an accuracy of 87.5% on the test set. The model also performs well on some example reviews, as shown below:
+The model achieves an accuracy of 90% on the test set. The model also performs well on some example reviews, as shown below:
 
 | Review | Prediction | Probability |
 |--------|------------|-------------|
