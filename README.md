@@ -16,7 +16,7 @@ Final model is a single Bidirectional LSTM layer with 32 units. The model uses p
 
 ## Training
 
-The model was trained using the Adam optimizer with a learning rate of 0.001 and binary cross-entropy loss. The model was trained for 10 epochs on 49k examples and tested on 1k.
+The model was trained using the Adam optimizer with a learning rate of 0.001 and binary cross-entropy loss. The model was trained for 10 epochs on 40k examples and tested on 1k.
 
 ## Results
 
