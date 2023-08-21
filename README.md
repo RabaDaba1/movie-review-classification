@@ -1,6 +1,6 @@
 # Movie Review Classification
 
-This repository contains code for predicting if a movie review is positive or negative using TensorFlow and word embeddings. The goal is to build a binary classifier that can accurately classify the sentiment of a movie review based on the text.
+This repository contains code for predicting if a movie review is positive or negative using TensorFlow and word embeddings. The goal is to build a binary classifier that can accurately classify the sentiment of a movie review.
 
 ## Data
 
@@ -8,18 +8,24 @@ The training [dataset is from Kaggle](https://www.kaggle.com/datasets/lakshmi25n
 
 ## Model
 
-The model is a simple neural network that consists of an embedding layer, a global average pooling layer, and a dense layer with sigmoid activation. The embedding layer maps each word index to a vector of 10 dimensions. The global average pooling layer computes the average of the embeddings for each review. The dense layer outputs a probability between 0 and 1, indicating how likely the review is positive.
+The baseline model is a simple neural network that consists of an embedding layer, a global average pooling layer, and a dense layer with sigmoid activation. The embedding layer maps each word index to a vector of 10 dimensions.
+
+The model is a single Bidirectional LSTM layer with 32 units. The model uses pre-trained GloVe 100D embeddings to improve its performance.
 
 ## Training
 
-The model is trained using the Adam optimizer and binary cross-entropy loss. The training set is split into 80% for training and 20% for validation. The model is trained for 20 epochs. The performance of the model is evaluated using accuracy score.
+The model was trained using the Adam optimizer with a learning rate of 0.001 and binary cross-entropy loss. The model was trained for 10 epochs.
 
 ## Results
 
-The model achieves an accuracy of 90% on the test set. The model also performs well on some example reviews, as shown below:
+Final model achieved **91.8%** accuracy on the training set and **88.5%** accuracy on the test set. There was no validation set as there was no hyperparameter tuning.
 
 | Review | Prediction | Probability |
 |--------|------------|-------------|
-| I loved this movie. It was so funny and entertaining. | Positive | 0.79 |
+| The movie was great. I enjoyed every second of it although actors play wasn't perfect but plot made up for it. I would recommend it to others. | Positive | 0.92 |
+| I loved this movie. It was so funny and entertaining. | Positive | 0.97 |
 | This movie was terrible. The plot was boring and the acting was awful. | Negative | 0.00 |
-| Funny movie but not an amazing one. Best to watch with your friends. | Positive | 0.55 |
+| Funny movie but not an amazing one. Best to watch with your friends. | Positive | 0.97 |
+| Not a good movie. I wasn't satisfied with the actors play. I wouldn't recommend it to others. | Negative | 0.45 |
+| A good movie. I was satisfied with the actors play. I would recommend it to others. | Positive | 0.78 |
+
