@@ -10,7 +10,7 @@ The training [dataset is from Kaggle](https://www.kaggle.com/datasets/lakshmi25n
 
 The baseline model is a simple neural network that consists of an embedding layer, a global average pooling layer, and a dense layer with sigmoid activation. The embedding layer maps each word index to a vector of 10 dimensions.
 
-The model is a single Bidirectional LSTM layer with 32 units. The model uses pre-trained GloVe 100D embeddings to improve its performance.
+Final model is a single Bidirectional LSTM layer with 32 units. The model uses pre-trained GloVe 100D embeddings to improve its performance.
 
 ## Training
 
