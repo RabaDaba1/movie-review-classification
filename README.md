@@ -24,9 +24,9 @@ Final model achieved **95.0%** accuracy on the training set and **90.3%** accura
 
 | Review | Prediction | Probability |
 |--------|------------|-------------|
-| The movie was great. I enjoyed every second of it although actors play wasn't perfect but plot made up for it. I would recommend it to others. | Positive | 0.97 |
-| I loved this movie. It was so funny and entertaining. | Positive | 0.97 |
+| The movie was great. I enjoyed every second of it although actors play wasn't perfect but plot made up for it. I would recommend it to others. | Positive | 0.94 |
+| I loved this movie. It was so funny and entertaining. | Positive | 0.88 |
 | This movie was terrible. The plot was boring and the acting was awful. | Negative | 0.00 |
-| Funny movie but not an amazing one. Best to watch with your friends. | Positive | 0.93 |
-| Not a good movie. I wasn't satisfied with the actors play. I wouldn't recommend it to others. | Negative | 0.48 |
-| A good movie. I was satisfied with the actors play. I would recommend it to others. | Positive | 0.85 |
+| Funny movie but not an amazing one. Best to watch with your friends. | Positive | 0.91 |
+| Not a good movie. I wasn't satisfied with the actors play. I wouldn't recommend it to others. | Negative | 0.17 |
+| A good movie. I was satisfied with the actors play. I would recommend it to others. | Positive | 0.67 |
