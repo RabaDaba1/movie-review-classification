@@ -16,11 +16,11 @@ Final model is a single Bidirectional LSTM layer with 32 units. The model uses p
 
 ## Training
 
-The model was trained using the Adam optimizer with a learning rate of 0.001 and binary cross-entropy loss. The model was trained for 10 epochs on 40k examples and tested on 1k.
+The model was trained using the Adam optimizer with a learning rate of 0.001 and binary cross-entropy loss. The model was trained for 10 epochs on 49k examples and tested on 1k.
 
 ## Results
 
-Final model achieved **91.8%** accuracy on the training set and **88.5%** accuracy on the test set. There was no validation set as there was no hyperparameter tuning.
+Final model achieved **93.5%** accuracy on the training set and **90.3%** accuracy on the test set. There was no validation set as there was no hyperparameter tuning.
 
 | Review | Prediction | Probability |
 |--------|------------|-------------|
