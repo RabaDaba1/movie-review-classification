@@ -1,6 +1,6 @@
 # Movie Review Classifier
 
-This repository contains code for predicting if a movie review is positive or negative using TensorFlow and word embeddings. The goal is to build a binary classifier that can accurately classify the sentiment of a movie review.
+This repository contains code for predicting if a movie review is positive or negative using TensorFlow. The goal is to build a binary classifier that can accurately classify the sentiment of a movie review.
 
 ## Data
 
